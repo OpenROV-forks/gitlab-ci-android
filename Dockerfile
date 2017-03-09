@@ -50,7 +50,7 @@ RUN mkdir -p $ANDROID_HOME/licenses/ \
 
 RUN (while [ 1 ]; do sleep 5; echo y; done) | ${ANDROID_HOME}/tools/android update sdk -u -a -t ${SDK_PACKAGES}
 
-ENV VERSION_ANDROID_NDK "android-ndk-r12b"
+ENV VERSION_ANDROID_NDK "android-ndk-r14"
 
 ENV ANDROID_NDK_HOME "/sdk/${VERSION_ANDROID_NDK}"
 
