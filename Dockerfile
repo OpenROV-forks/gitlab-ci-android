@@ -59,3 +59,5 @@ RUN unzip /ndk.zip -d /sdk && \
     rm -v /ndk.zip
 
 RUN gem install fastlane
+
+RUN /sdk/tools/bin/sdkmanager "cmake;3.6.3155560"
